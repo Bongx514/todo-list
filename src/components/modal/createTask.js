@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const confirmBtn = document.querySelector('.action.primary.confirm'); // your Confirm button
+    const confirmBtn = document.querySelector('.action.primary.confirm'); 
     const messageBox = document.querySelector('.page-messages');
     var modal = document.querySelector('.modals');
 
@@ -24,9 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(result => {
             messageBox.innerHTML = '';
 
-            // Create new message element
             const msg = document.createElement('div');
-            msg.className = `message ${result.status}`; // you can style `.success` and `.error`
+            msg.className = `message ${result.status}`;
             msg.textContent = result.message;
 
             messageBox.appendChild(msg);
