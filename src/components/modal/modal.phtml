@@ -1,0 +1,62 @@
+<?php
+    $_priorities = [
+        ['value' => '', 'label' => 'Please set priority'],
+        ['value' => 'low', 'label' => 'Low'],
+        ['value' => 'medium', 'label' => 'Medium'],
+        ['value' => 'high', 'label' => 'High'],
+        ['value' => 'urgent', 'label' => 'Urgent']
+    ];
+?>
+
+
+<div class="modal card">
+    <span class="close">&times;</span>
+    <div class="card-header">
+        <h4>Add more details to your ticket</h4>
+    </div>
+    <div class="modal-content">
+        <form action="" class="modal-form" id="modal-form">
+            <div class="modal-form">
+            <div class="field project">
+                    <label for="">Project</label>
+                    <input 
+                        type="textarea" 
+                        class="text-input" 
+                        id="project"
+                        placeholder="Enter project name">
+                </div>
+                <div class="field description">
+                    <label for="">description</label>
+                    <textarea 
+                        name="description" 
+                        id="desrciption" 
+                        class="text-input" 
+                        placeholder="Enter description | User story | Estimantion | Breakdown"></textarea>
+                </div>
+                <div class="field due-date">
+                    <label for="">Due-date</label>
+                    <input 
+                        type="date" 
+                        class="text-input"
+                        id="due-date">
+                </div>
+                <div class="field priority">
+                <label for="">priority</label>
+                <select id="priority" class="text-input">
+                    <?php foreach ($_priorities as $_priority): ?>
+                        <option 
+                            id="priority"
+                            value=<?= $_priority['value']?>>
+                            <?= $_priority['label']?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <button class="action primary confirm">Confirm</button>
+</div>
+
+<script type="module" src="src/components/modal/createTask.js"></script>

@@ -1,0 +1,16 @@
+<?php
+    $_items = [
+        ['label' => 'Home'],
+        ['label' => 'About']
+    ]; 
+?>
+
+<div class="navbar">
+    <ul class="list">
+        <?php foreach ($_items as $_item): ?>
+            <li class="list-items">
+                <a href=""><span><?= $_item['label'] ?></span></a>
+            </li>
+        <?php endforeach; ?>     
+    </ul>
+</div>

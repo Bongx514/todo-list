@@ -1,0 +1,96 @@
+:root {
+    /* Breakpoints */
+    --mobile-sm: 480px;
+    --mobile-md: 768px;
+    --mobile-lg: 992px;
+    --tablet: 1200px;
+    --desktop: 1600px;
+    --desktop-lg: 1920px;
+  
+    /* Font Families */
+    --font-sans: 'Inter', 'Segoe UI', sans-serif;
+    --font-serif: 'Merriweather', 'Georgia', serif;
+    --font-mono: 'Fira Code', 'Courier New', monospace;
+    --font-lucida: 'Lucida Console', 'Courier New', Monaco, monospace;
+  
+    /* Font Weights */
+    --font-thin: 100;
+    --font-extra-light: 200;
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+  
+    /* Black Shades */
+    --black-100: #000000;
+    --black-80: #1a1a1a;
+    --black-60: #333333;
+    --black-40: #4d4d4d;
+    --black-20: #666666;
+  
+    /* White Shades */
+    --white-100: #ffffff;
+    --white-80: #f2f2f2;
+    --white-60: #e6e6e6;
+    --white-40: #d9d9d9;
+    --white-20: #cccccc;
+  
+    /* Gray Shades */
+    --gray-100: #1f1f1f;
+    --gray-80: #4d4d4d;
+    --gray-60: #808080;
+    --gray-40: #b3b3b3;
+    --gray-20: #e6e6e6;
+  
+    /* Blue Shades */
+    --blue-100: #0d3b66;
+    --blue-80: #1e5aa8;
+    --blue-60: #338af3;
+    --blue-40: #70b8f7;
+    --blue-20: #cce5ff;
+  
+    /* Red Shades */
+    --red-100: #7f1d1d;
+    --red-80: #b91c1c;
+    --red-60: #ef4444;
+    --red-40: #fca5a5;
+    --red-20: #fee2e2;
+  
+    /* Green Shades */
+    --green-100: #14532d;
+    --green-80: #15803d;
+    --green-60: #22c55e;
+    --green-40: #86efac;
+    --green-20: #dcfce7;
+  
+    /* Gold Shades */
+    --gold-100: #8b6f00;
+    --gold-80: #b58e00;
+    --gold-60: #d4af37;
+    --gold-40: #f1d276;
+    --gold-20: #fff6cc;
+  
+    /* Navy Shades */
+    --navy-100: #001f3f;
+    --navy-80: #003366;
+    --navy-60: #004080;
+    --navy-40: #336699;
+    --navy-20: #99b3cc;
+  
+    /* Turquoise Shades */
+    --turquois-100: #004d4d;
+    --turquois-80: #008080;
+    --turquois-60: #20cfcf;
+    --turquois-40: #66e0e0;
+    --turquois-20: #ccfafa;
+  
+    /* Purple Shades */
+    --purple-100: #3b0a59;
+    --purple-80: #6b21a8;
+    --purple-60: #a855f7;
+    --purple-40: #d8b4fe;
+    --purple-20: #f3e8ff;
+  }
+  

@@ -1,0 +1,28 @@
+@import url('../../web/css/_variables.css');
+
+.todo-list {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.todo-list .add-field {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.todo-list .list .card {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+    .todo-list {
+        width: 80%;
+    }
+}

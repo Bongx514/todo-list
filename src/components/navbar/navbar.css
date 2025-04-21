@@ -1,0 +1,24 @@
+@import url('../../web/css/_variables.css');
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--navy-60);
+}
+
+.navbar .list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar .list-items a {
+  color: var(--white-100);
+  text-decoration: none;
+}
+
+.navbar .list-items a:hover {
+  color: var(--white-40);
+}
