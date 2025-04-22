@@ -12,8 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     li.className = 'list-items card';
                     li.innerHTML = `
                         <div class="card-body">
-                            <div class="title">
+                            <div class="title${todo.Id}" id="title" data-id="${todo.Id}">
                                 <h4>${todo.title}</h4>
+                            </div>
+                            <div class="description">
+                                <p>${todo.project_name}</p>
                             </div>
                             <div class="description">
                                 <p>${todo.description}</p>
@@ -26,10 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                         </div>
                         <div class="remove-button">
-                            <button type="submit">Remove</button>
+                            <button class="remove-button">Remove</button>
                         </div>
                     `;
                     listContainer.appendChild(li);
+
+                    console.log(todo.Id);
                 });
             } else {
                 console.log('No tasks found.');
@@ -38,6 +43,5 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => {
             console.error('Error fetching tasks:', error);
         });
-
-    
 });
+
