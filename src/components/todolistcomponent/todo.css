@@ -21,8 +21,35 @@
     justify-content: space-between;
 }
 
+.remove-button {
+    background: var(--red-80);
+    border-radius: 4px;
+
+    :hover {
+        background: var(--red-100);
+    }
+}
+
 @media screen and (max-width: 900px) {
     .todo-list {
         width: 80%;
+    }
+
+    .todo-list .list .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .todo-list .list .card .card-body {
+        width: 100%;
+    }
+
+    .add-field .text-input {
+        width: 228px;
+    }
+
+    .remove-button {
+        width: 100%;
+        text-align: center;
     }
 }
